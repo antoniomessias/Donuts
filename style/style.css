@@ -1,0 +1,191 @@
+/*
+#d6f2fe
+#df1a7a
+Azul claro (#DFF3FF) → Fundo do site, para manter leveza e contraste com o logo
+Rosa vibrante (#FF3E87) → Destaques e botões, combinando com o texto "BeaCake"
+Magenta escuro (#D21F6B) → Para hover em botões e elementos interativos
+Marrom chocolate (#6B3A1E) → Para detalhes e fundo de seções, remetendo ao donut
+Bege claro (#F8D8B0) → Para equilíbrio e áreas secundárias, remetendo à massa do donut
+
+*/
+
+body {
+    font-family: "Coiny", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8D8B0;
+    color: #333;
+}
+
+header {
+    background-color: #d6f2fe;
+    top: 0;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+nav ul {
+    font-size: 1.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #d6f2fe;
+    padding: 0.5rem 1rem;
+    margin: 0;
+}
+
+nav li img {
+    width: 100px;
+    margin-right: 5px;
+}
+
+nav li a {
+    color: #df1a7a;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav li {
+    position: relative;
+    padding: 10px 15px;
+}
+
+nav li a:hover {
+    color: #df1a7a;
+    border-bottom: 5px solid #df1a7a;
+    padding-bottom: 40px;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.product {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 0.5rem 0;
+}
+
+.product p {
+    color: #666;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .products {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    nav ul {
+        font-size: 1.2rem;
+    }
+
+    nav li img {
+        width: 80px;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .product {
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+}
+
+nav li.active a {
+    color: #df1a7a;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #d6f2fe;
+    color: #df1a7a;
+}
+#instagram {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior da tela */
+    right: 20px; /* Distância da parte direita da tela */
+    z-index: 1000;
+  }
+  
+  #instagram img {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px; /* Tamanho do ícone */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+  }
