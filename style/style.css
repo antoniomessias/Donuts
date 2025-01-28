@@ -54,7 +54,7 @@ nav li {
 nav li a:hover {
     color: #df1a7a;
     border-bottom: 5px solid #df1a7a;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
 .hero {
@@ -66,9 +66,9 @@ nav li a:hover {
 
 .hero img {
     width: 100%;
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover; /* Faz com que a imagem preencha a área sem distorcer */
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .hero h2 {
@@ -112,7 +112,6 @@ nav li a:hover {
     color: #666;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
