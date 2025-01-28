@@ -6,7 +6,6 @@ Rosa vibrante (#FF3E87) → Destaques e botões, combinando com o texto "BeaCake
 Magenta escuro (#D21F6B) → Para hover em botões e elementos interativos
 Marrom chocolate (#6B3A1E) → Para detalhes e fundo de seções, remetendo ao donut
 Bege claro (#F8D8B0) → Para equilíbrio e áreas secundárias, remetendo à massa do donut
-
 */
 
 body {
@@ -62,6 +61,14 @@ nav li a:hover {
     text-align: center;
     padding: 2rem;
     color: #333;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Faz com que a imagem preencha a área sem distorcer */
 }
 
 .hero h2 {
@@ -104,6 +111,7 @@ nav li a:hover {
 .product p {
     color: #666;
 }
+
 /* Responsividade */
 @media (max-width: 768px) {
     nav ul {
@@ -176,15 +184,16 @@ footer {
     background-color: #d6f2fe;
     color: #df1a7a;
 }
+
 #instagram {
     position: fixed;
     bottom: 20px; /* Distância da parte inferior da tela */
     right: 20px; /* Distância da parte direita da tela */
     z-index: 1000;
-  }
-  
-  #instagram img {
+}
+
+#instagram img {
     width: 50px; /* Tamanho do ícone */
     height: 50px; /* Tamanho do ícone */
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-  }
+}
